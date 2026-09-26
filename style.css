@@ -1,0 +1,146 @@
+/* Réglages généraux */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f7f7f7;
+}
+
+/* Présentation principale */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  padding: 60px 10%;
+  background: white;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.intro {
+  margin-bottom: 0;
+  color: #555;
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 3rem;
+}
+
+.hero h2 {
+  color: #555;
+  font-weight: normal;
+}
+
+/* Photo du portfolio */
+.profile-photo {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Boutons et liens importants */
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+
+  color: white;
+  background: #1d3557;
+
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.button:hover,
+.button:focus {
+  background: #284d7a;
+}
+
+/* Le contour aide les utilisateurs qui naviguent au clavier */
+.button:focus-visible {
+  outline: 3px solid #457b9d;
+  outline-offset: 3px;
+}
+
+/* Sections principales */
+.section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.section > h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Grilles des compétences et projets */
+.skills,
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.contact {
+  text-align: center;
+}
+
+/* Pied de page */
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #555;
+  background: white;
+}
+
+/* Adaptation aux smartphones */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column-reverse;
+    gap: 25px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skills,
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}

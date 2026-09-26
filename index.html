@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio - Emma Martin</title>
+
+  <!-- Description utile pour les moteurs de recherche -->
+  <meta
+    name="description"
+    content="Portfolio d'Emma Martin, étudiante en école de commerce."
+  >
+
+  <!-- Feuille de style du site -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- En-tête et présentation principale -->
+  <header class="hero">
+    <div class="hero-text">
+      <p class="intro">Bonjour, je suis</p>
+
+      <h1>Emma Martin</h1>
+
+      <h2>Étudiante en école de commerce</h2>
+
+      <p>
+        Passionnée par le marketing et la gestion de projet,
+        je recherche une opportunité pour développer mes compétences
+        et contribuer à des projets concrets.
+      </p>
+
+      <!-- Lien vers la section contact -->
+      <a class="button" href="#contact">Me contacter</a>
+    </div>
+
+    <!-- Texte alternatif important pour l'accessibilité -->
+    <img
+      class="profile-photo"
+      src="maphoto.png"
+      alt="Portrait d'Emma Martin"
+    >
+  </header>
+
+  <main>
+
+    <!-- Section des compétences -->
+    <section class="section" id="competences">
+      <h2>Mes compétences</h2>
+
+      <div class="skills">
+        <article class="card">
+          <h3>Marketing</h3>
+          <p>Analyse de marché et stratégie marketing.</p>
+        </article>
+
+        <article class="card">
+          <h3>Gestion de projet</h3>
+          <p>Organisation, planification et travail en équipe.</p>
+        </article>
+
+        <article class="card">
+          <h3>Communication</h3>
+          <p>Présentations, rédaction et communication digitale.</p>
+        </article>
+
+        <article class="card">
+          <h3>Analyse</h3>
+          <p>Excel, analyse de données et création de tableaux de bord.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Deux exemples de projets -->
+    <section class="section" id="projets">
+      <h2>Mes projets</h2>
+
+      <div class="projects">
+        <article class="card">
+          <h3>Étude de marché</h3>
+          <p>
+            Réalisation en équipe d'une étude de marché pour le lancement
+            d'un nouveau produit destiné aux étudiants.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Campagne digitale</h3>
+          <p>
+            Création d'une stratégie de communication sur les réseaux
+            sociaux dans le cadre d'un projet scolaire.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        Vous souhaitez échanger sur mon profil ou une opportunité ?
+      </p>
+
+      <a class="button" href="mailto:emma.martin@example.com">
+        Envoyer un e-mail
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> Emma Martin — Portfolio étudiant
+    </p>
+  </footer>
+
+  <!-- JavaScript chargé à la fin pour ne pas bloquer la page -->
+  <script src="script.js"></script>
+</body>
+</html>
